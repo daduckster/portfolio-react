@@ -1,1 +1,49 @@
 @import '../../_variables.scss';
+
+.techContainer {
+  max-width: 62rem;
+  padding: 0 2.5vmin;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  margin: 13vmin 0;
+
+  h2 {
+    font-size: 8vmin;
+    font-weight: 700;
+  }
+
+  .forwardIcon {
+    color: $pink;
+    width: 10vmin;
+    height: 10vmin;
+  }
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: space-between;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 5vmin;
+
+    .item {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 4vmin;
+      };
+
+      .icon {
+        width: 8vmin;
+        height: 8vmin;
+        margin-right: 1.5vmin;
+      }
+    }
+  }
+}
