@@ -1,1 +1,244 @@
 @import '../../_variables.scss';
+
+.heroContainer {
+  display:grid;
+  justify-content: flex-end;
+  max-width:62rem;
+  width:100vw;
+  grid-template-columns: repeat(4, 25vmin);
+  grid-template-rows: repeat(6, 25vmin);
+  grid-template-areas:
+          ". cube1 cube2 cube3"
+          "cube4 . cube5 cube6"
+          "header header header header"
+          "header header header header"
+          "cube7 cube8 . cube9"
+          "cube10 . cube11 cube12"
+}
+
+.headerContainer {
+  grid-area:header;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 5.7vmin;
+    margin-bottom: 1.7vmin;
+  }
+
+  h1 {
+    font-size: 10vmin;
+    margin-bottom: 4vmin;
+  }
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.5vmin;
+
+  .projectBtn {
+    text-decoration: none;
+    color: black;
+    font-size: 5.7vmin;
+    background-color: $accent;
+    border-radius: 3px;
+    padding: 2vmin 4vmin;
+  }
+
+  .contactContainer {
+    display: flex;
+    align-items: center;
+
+    .contactBtn {
+      display: flex;
+      text-decoration: none;
+      color: black;
+      font-size: 5.7vmin;
+    }
+
+    .contactIcon {
+      height: 5.7vmin;
+      width: 5.7vmin;
+      margin-right: 1vmin;
+    }
+
+
+  }
+
+}
+
+.cube1{
+  grid-area: cube1;
+  width: 100%;
+  height: 100%;
+}
+
+.cube2{
+  grid-area: cube2;
+  width: 100%;
+  height: 100%;
+}
+
+.cube3{
+  grid-area: cube3;
+  width: 100%;
+  height: 100%;
+}
+
+.cube4{
+  grid-area: cube4;
+  width: 100%;
+  height: 100%;
+}
+
+.cube5{
+  grid-area: cube5;
+  width: 100%;
+  height: 100%;
+}
+
+.cube6{
+  grid-area: cube6;
+  width: 100%;
+  height: 100%;
+}
+
+.cube7{
+  grid-area: cube7;
+  width: 100%;
+  height: 100%;
+}
+
+.cube8{
+  grid-area: cube8;
+  width: 100%;
+  height: 100%;
+}
+
+.cube9{
+  grid-area: cube9;
+  width: 100%;
+  height: 100%;
+}
+
+.cube10{
+  grid-area: cube10;
+  width: 100%;
+  height: 100%;
+}
+
+.cube11{
+  grid-area: cube11;
+  width: 100%;
+  height: 100%;
+}
+
+.cube12{
+  grid-area: cube12;
+  width: 100%;
+  height: 100%;
+}
+
+.cube13{
+  grid-area: cube13;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube14{
+  grid-area: cube14;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube15{
+  grid-area: cube15;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube16{
+  grid-area: cube16;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube17{
+  grid-area: cube17;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube18{
+  grid-area: cube18;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube19{
+  grid-area: cube19;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube20{
+  grid-area: cube20;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube21{
+  grid-area: cube21;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube22{
+  grid-area: cube22;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube23{
+  grid-area: cube23;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube24{
+  grid-area: cube24;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube25{
+  grid-area: cube25;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cube26{
+  grid-area: cube26;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+

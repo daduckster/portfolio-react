@@ -3,7 +3,9 @@ import styles from './Tech.module.scss';
 
 function Tech() {
   return (
-    <div>Tech</div>
+    <div>
+
+    </div>
   )
 }
 

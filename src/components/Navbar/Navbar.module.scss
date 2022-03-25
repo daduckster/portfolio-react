@@ -1,1 +1,23 @@
 @import '../../_variables.scss';
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE
+
+.navContainer {
+  max-width: 62rem;
+}
+
+.hamburgerContainer{
+  display: flex;
+  justify-content: flex-end;
+  padding: 2.5vmin 2.5vmin;
+
+  .hamburgerIcon{
+    width: 6vmin;
+    height: auto;
+  }
+}
+
+.linkContainer {
+  display: none;
+}
