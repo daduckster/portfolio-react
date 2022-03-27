@@ -1,5 +1,8 @@
 @import '../../_variables.scss';
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE
+
 .headerContainer {
   display: flex;
   align-items: center;
@@ -45,3 +48,4 @@
     z-index:-100;
   }
 }
+

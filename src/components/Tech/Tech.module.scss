@@ -1,7 +1,9 @@
 @import '../../_variables.scss';
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE
+
 .techContainer {
-  max-width: 64rem;
   padding: 0 3vmin;
 }
 
@@ -35,6 +37,7 @@
     .item {
       display: flex;
       align-items: center;
+      color: $gray;
 
       .icon {
         width: calc(1rem + 3vmin);

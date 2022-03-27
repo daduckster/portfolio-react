@@ -1,7 +1,9 @@
 @import '../../_variables.scss';
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE
+
 .contactsContainer {
-  max-width: 64rem;
   padding: 0 3vmin;
 }
 
@@ -38,6 +40,7 @@
       width: calc(1.6rem + 2.5vmin);
       height: calc(1.6rem + 2.5vmin);
       margin-bottom: calc(0.2rem + 0.4vmin);
+      color: $gray;
     }
 
     a {
@@ -52,5 +55,14 @@
         margin-left: 0.3rem;
       }
     }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// TABLET
+@media screen and (min-height: 568px) and (min-width: 613px) {
+  .linksContainer {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

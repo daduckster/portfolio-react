@@ -3,10 +3,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 // MOBILE
 
-.navContainer {
-  max-width: 62rem;
-}
-
 .hamburgerContainer{
   display: flex;
   justify-content: flex-end;
@@ -16,9 +12,48 @@
     cursor: pointer;
     width: calc(0.7rem + 3vmin);
     height: auto;
+    color: $gray;
   }
 }
 
 .linkContainer {
   display: none;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// TABLET
+@media screen and (min-height: 568px) and (min-width: 613px){
+  .hamburgerContainer {
+    display: none;
+  }
+
+  .linkContainer {
+    display: flex;
+    justify-content: center;
+    padding: 2.5vmin 3vmin;
+    gap: calc(1.5rem + 3vmin);
+
+    .link {
+      color: $gray;
+      text-decoration: none;
+      font-size: 1.13em;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP + IPAD PRO HORIZONTAL
+@media screen and (min-height: 568px) and (min-width: 1025px) {
+  .navContainer {
+    display: flex;
+    max-width: 64rem;
+    justify-content: flex-end;
+    margin: auto;
+  }
+
+  .linkContainer {
+    gap: calc(1rem + 2vmin);
+    padding: 2.5vmin 0;
+
+  }
 }

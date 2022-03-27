@@ -12,8 +12,12 @@ function ProjectCards(props) {
           <button>...read more</button>
         </p>
         <div className={styles.btnContainer}>
-          <a className={styles.demoBtn} target="_blank" rel="noopener noreferrer" href="#"><AiFillPlayCircle className={styles.demoIcon} /> Demo</a>
-          <a className={styles.gitBtn} target="_blank" rel="noopener noreferrer" href="#"><AiFillGithub className={styles.gitIcon} /> GitHub</a>
+          <div className={styles.buttons}>
+            <a className={styles.demoBtn} target="_blank" rel="noopener noreferrer" href="#"><AiFillPlayCircle
+              className={styles.demoIcon}/> Demo</a>
+            <a className={styles.gitBtn} target="_blank" rel="noopener noreferrer" href="#"><AiFillGithub
+              className={styles.gitIcon}/> GitHub</a>
+          </div>
         </div>
       </div>
     </div>

@@ -1,11 +1,16 @@
 @import '../../_variables.scss';
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE
+
 .footerContainer {
   display: flex;
   justify-content: center;
-  padding: 3vmin 3vmin 1vmin 3vmin ;
+  padding: calc(0.7rem + 3vmin) 3vmin 1vmin 3vmin;
 
   p {
     text-align: center;
+    font-size: calc(0.9rem + 0.5vmin);
+    color: $gray;
   }
 }

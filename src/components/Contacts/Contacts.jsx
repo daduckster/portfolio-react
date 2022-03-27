@@ -24,7 +24,7 @@ function Contacts() {
         </div>
         <div className={styles.element}>
           <MdEmail className={styles.networkIcon} />
-          <a target="_blank" rel="noopener noreferrer" href="#">/olyavlasak <MdOutlineContentCopy className={styles.linkIcon}/></a>
+          <a target="_blank" rel="noopener noreferrer" href="#">Copy Email <MdOutlineContentCopy className={styles.linkIcon}/></a>
         </div>
       </div>
     </div>
