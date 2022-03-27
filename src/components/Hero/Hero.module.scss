@@ -75,6 +75,25 @@
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE - HORIZONTAL
+@media screen and (max-height: 567px) {
+  .heroContainer {
+    grid-template-columns: repeat(7, 20vmin);
+    grid-template-rows: repeat(4, 20vmin);
+    grid-template-areas:
+            'cube1 . cube2 cube3 cube4 cube5 cube6'
+            'header header header header header header header'
+            'header header header header header header header'
+            'cube7 cube8 . cube9 cube10 cube11 cube12'
+  }
+
+  .btnContainer {
+    justify-content: center;
+    gap: 10vmin;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
   .heroContainer {
@@ -93,6 +112,56 @@
   .btnContainer {
     justify-content: center;
     gap: 7vmin;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP + IPAD PRO HORIZONTAL
+@media screen and (min-height: 568px) and (min-width: 1025px) {
+  .heroContainer {
+    margin: auto;
+    grid-template-columns: repeat(8, 12.3vmin);
+    grid-template-rows: repeat(7, 12.3vmin);
+    grid-template-areas:
+            'cube1 . cube2 cube3 cube4 cube5 cube6 cube7'
+            '. cube8 cube9 . cube10 cube11 cube12 cube13'
+            '. . . . cube14 . cube15 cube16'
+            'header header header header header header . cube17'
+            'header header header header header header cube18 cube19'
+            '. . . . cube20 cube21 cube22 cube23'
+            '. . . cube24 . . cube25 cube26'
+  }
+
+  .headerContainer {
+    align-items: flex-start;
+
+    p {
+      font-size: calc(0.5rem + 2.7vmin);
+    }
+
+    h1 {
+      font-size: calc(0.2rem + 6.8vmin);
+    }
+  }
+
+  .btnContainer {
+    justify-content: flex-start;
+    padding: 0;
+
+    .projectBtn {
+      font-size: calc(0.5rem + 1.6vmin);
+      padding: calc(0.1rem + 1vmin) calc(0.6rem + 2.5vmin);
+    }
+
+    .contactContainer {
+      .contactBtn {
+        font-size: calc(0.5rem + 1.6vmin);
+      }
+      .contactIcon {
+        height: calc(0.5rem + 1.6vmin);
+        width: calc(0.5rem + 1.6vmin);
+      }
+    }
   }
 }
 

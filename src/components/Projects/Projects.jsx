@@ -13,7 +13,6 @@ function Projects() {
 
       <div className={styles.contentsContainer}>
         <ProjectCards />
-        <ProjectCards />
 
         <div className={styles.pinkSquare}></div>
         <div className={styles.blueSquare}></div>

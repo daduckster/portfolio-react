@@ -1,4 +1,5 @@
 @import '../../_variables.scss';
+@import "./HeroCubes.scss";
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // MOBILE
@@ -128,6 +129,14 @@
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
   .cubesTablet {
+    display: flex;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP + IPAD PRO HORIZONTAL
+@media screen and (min-height: 568px) and (min-width: 1025px) {
+  .cubesDesktop {
     display: flex;
   }
 }

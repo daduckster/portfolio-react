@@ -47,7 +47,6 @@
       cursor: pointer;
       display: flex;
       align-items: center;
-      //font-size: calc(0.9rem + 0.5vmin);
       font-size: calc(0.9rem + 1vmin);
       color: $link;
 
@@ -59,10 +58,81 @@
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
-// TABLET
-@media screen and (min-height: 568px) and (min-width: 613px) {
+// MOBILE - HORIZONTAL
+@media screen and (max-height: 567px) {
+  .contactsContainer {
+    padding: 0;
+    width: 140vmin;
+    margin: auto;
+  }
+
   .linksContainer {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// TABLET
+@media screen and (min-height: 568px) and (min-width: 613px) {
+  .contactsContainer {
+    padding: 0 3vmin;
+    width: 100%;
+    margin: 0;
+  }
+
+  .linksContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP + IPAD PRO HORIZONTAL
+@media screen and (min-height: 568px) and (min-width: 1025px) {
+  .contactsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 98.4vmin;
+    margin: calc(1.5rem + 6.5vmin) auto auto auto;
+  }
+
+  .headerContainer {
+    margin: 0;
+
+    h2 {
+      font-size: calc(0.7rem + 2vmin);
+    }
+
+    .forwardIcon {
+      width: calc(1rem + 2.5vmin);
+      height: calc(1rem + 2.5vmin);
+    }
+  }
+
+  .linksContainer {
+    align-items: flex-start;
+    width: 61.5vmin;
+
+    .element {
+      margin-top: calc(2.5rem + 1vmin);
+      margin-bottom: calc(2.5rem + 1vmin);
+
+      .networkIcon {
+        width: calc(0.6rem + 3vmin);
+        height: calc(0.6rem + 3vmin);
+        margin-bottom: calc(0.2rem + 0.4vmin);
+      }
+
+      a {
+        font-size: calc(0.7rem + 0.8vmin);
+
+        .linkIcon {
+          margin-left: 0.5vmin;
+        }
+      }
+    }
   }
 }

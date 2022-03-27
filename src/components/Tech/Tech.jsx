@@ -40,12 +40,16 @@ function Tech() {
             <p>React</p>
           </div>
           <div className={styles.item}>
-            <FaGitAlt className={styles.icon} />
-            <p>Git</p>
+            <SiAdobeillustrator className={styles.icon} />
+            <p>Illustrator</p>
           </div>
         </div>
 
         <div className={styles.column}>
+          <div className={styles.item}>
+            <FaGitAlt className={styles.icon} />
+            <p>Git</p>
+          </div>
           <div className={styles.item}>
             <AiFillGithub className={styles.icon} />
             <p>GitHub</p>
@@ -53,10 +57,6 @@ function Tech() {
           <div className={styles.item}>
             <CgFigma className={styles.icon} />
             <p>Figma</p>
-          </div>
-          <div className={styles.item}>
-            <SiAdobeillustrator className={styles.icon} />
-            <p>Illustrator</p>
           </div>
         </div>
       </div>

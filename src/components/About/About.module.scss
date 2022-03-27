@@ -30,31 +30,126 @@
   flex-direction: column;
   align-items: center;
 
-  p {
+  .text {
     font-size: calc(0.9rem + 0.5vmin);
   }
 
-  h3 {
-    font-size: calc(1.2rem + 0.4vmin);
-    margin-top: calc(2rem + 1.5vmin);
-    margin-bottom: calc(0.6rem + 0.8vmin);
-    color: $pink;
+  .whySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: calc(1.2rem + 0.4vmin);
+      margin-top: calc(2rem + 1.5vmin);
+      margin-bottom: calc(0.6rem + 0.8vmin);
+      color: $pink;
+      white-space: nowrap;
+    }
   }
 
-  .element{
+  .elementContainer {
     display: flex;
-    align-items: center;
-    margin-bottom: calc(0.3rem + 0.3vmin);
+    flex-direction: column;
+    row-gap: calc(0.3rem + 0.3vmin);
 
-    div {
-      width: calc(0.8rem + 0.2vmin);
-      height: calc(0.8rem + 0.2vmin);
-      background-color: $blue;
-      margin-right: 0.4rem;
-    }
+    .element{
+      display: flex;
+      align-items: center;
 
-    p {
-      font-size: calc(0.9rem + 0.5vmin);
+      .elementBox {
+        width: calc(0.8rem + 0.2vmin);
+        height: calc(0.8rem + 0.2vmin);
+        background-color: $blue;
+        margin-right: 0.4rem;
+      }
+
+      p {
+        font-size: calc(0.9rem + 0.5vmin);
+      }
     }
   }
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE - HORIZONTAL
+@media screen and (max-height: 567px) {
+  .aboutContainer {
+    padding: 0;
+    width: 140vmin;
+    margin: auto;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// TABLET
+@media screen and (min-height: 568px) and (min-width: 613px) {
+  .aboutContainer {
+    padding: 0 3vmin;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP + IPAD PRO HORIZONTAL
+@media screen and (min-height: 568px) and (min-width: 1025px) {
+  .headerContainer {
+    width: 98.4vmin;
+    margin: calc(1.5rem + 6.5vmin) auto calc(1.5rem + 2vmin) auto;
+
+    h2 {
+      font-size: calc(0.7rem + 2vmin);
+      padding-left: 0;
+    }
+
+    .forwardIcon {
+      width: calc(1rem + 2.5vmin);
+      height: calc(1rem + 2.5vmin);
+    }
+  }
+
+  .textContainer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: calc(80rem + 3vmin);
+    margin: auto;
+
+    .text {
+      width: calc(40rem + 1.5vmin);
+      font-size: 1.13em;
+    }
+
+    .whySection {
+      flex-direction: row;
+      width: calc(40rem + 1.5vmin);
+
+      h3 {
+        flex-grow: 1;
+        width: fit-content;
+        padding: 0 2rem;
+        margin: 0;
+        font-size: 1.25em;
+        text-align: center;
+      }
+    }
+
+    .elementContainer {
+      .element {
+
+        .elementBox {
+          width: 1em;
+          height: 1em;
+          background-color: $blue;
+          margin-right: 0.4rem;
+        }
+
+        p {
+          font-size: 1.13em;
+        }
+      }
+    }
+  }
+}
+

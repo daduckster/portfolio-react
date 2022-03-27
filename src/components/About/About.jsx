@@ -6,11 +6,11 @@ function About() {
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.headerContainer}>
-        <h2>about</h2>
+        <h2>about me</h2>
         <AiFillForward className={styles.forwardIcon} />
       </div>
       <div className={styles.textContainer}>
-        <p>
+        <p className={styles.text}>
         Viverra in interdum elementum aliquam. Amet quis ac malesuada
         elementum augue sit maecenas tincidunt sit. Id odio eleifend
         tincidunt vivamus scelerisque. Eget odio in semper sed nunc eget.
@@ -18,29 +18,30 @@ function About() {
         Arcu vehicula dui, quis purus tincidunt nibh. At vitae, tempus mattis
         vestibulum suspendisse morbi pulvinar. Ut nam tortor duis quis ac et.
         </p>
-        <h3>WHY ME?</h3>
-        <div>
-          <div className={styles.element}>
-            <div className={styles.elementBox}></div>
-            <p>Est morbi fermentum.</p>
+        <div className={styles.whySection}>
+          <h3>WHY ME?</h3>
+          <div className={styles.elementContainer}>
+            <div className={styles.element}>
+              <div className={styles.elementBox}></div>
+              <p>Est morbi fermentum fgzfg.</p>
+            </div>
+            <div className={styles.element}>
+              <div className={styles.elementBox}></div>
+              <p>Netus aliquet.</p>
+            </div>
+            <div className={styles.element}>
+              <div className={styles.elementBox}></div>
+              <p>Commodo nisl arcu.</p>
+            </div>
+            <div className={styles.element}>
+              <div className={styles.elementBox}></div>
+              <p>Est morbi fermentumdfffgx.</p>
+            </div>
+            <div className={styles.element}>
+              <div className={styles.elementBox}></div>
+              <p>Diam egestas in amet dfdfg.</p>
+            </div>
           </div>
-          <div className={styles.element}>
-            <div className={styles.elementBox}></div>
-            <p>Netus aliquet.</p>
-          </div>
-          <div className={styles.element}>
-            <div className={styles.elementBox}></div>
-            <p>Commodo nisl arcu.</p>
-          </div>
-          <div className={styles.element}>
-            <div className={styles.elementBox}></div>
-            <p>Est morbi fermentum.</p>
-          </div>
-          <div className={styles.element}>
-            <div className={styles.elementBox}></div>
-            <p>Diam egestas in amet.</p>
-          </div>
-
         </div>
       </div>
     </div>

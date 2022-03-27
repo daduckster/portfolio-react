@@ -46,14 +46,18 @@
 @media screen and (min-height: 568px) and (min-width: 1025px) {
   .navContainer {
     display: flex;
-    max-width: 64rem;
+    width: 98.4vmin;
     justify-content: flex-end;
     margin: auto;
   }
 
   .linkContainer {
     gap: calc(1rem + 2vmin);
-    padding: 2.5vmin 0;
+    padding: 2vmin 0;
+
+    .link {
+      font-size: calc(0.8rem + 0.5vmin);
+    }
 
   }
 }

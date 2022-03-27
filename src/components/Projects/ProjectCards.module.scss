@@ -4,7 +4,6 @@
 // MOBILE
 
 .cardsContainer {
-  max-width: 100vw;
   padding: 0 3vmin;
 }
 
@@ -12,7 +11,7 @@
   display: grid;
   grid-template-areas: 'img' 'h3' 'p' 'btnContainer';
   width: 100%;
-  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.35);
   padding: 4vmin;
   border-radius: 3px;
   margin: calc(1rem + 3vmin) 0;
@@ -94,8 +93,24 @@
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE - HORIZONTAL
+@media screen and (max-height: 567px) {
+  .cardsContainer {
+    padding: 0;
+    width: 140vmin;
+    margin: auto;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
+  .cardsContainer {
+    padding: 0 3vmin;
+    width: 100%;
+    margin: 0;
+  }
+
   .card {
     grid-template-areas: 'h3 img' 'p img' 'btnContainer img';
     grid-template-columns: 50% 50%;
@@ -112,6 +127,52 @@
 
     .btnContainer {
       margin-right: 1rem;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP + IPAD PRO HORIZONTAL
+@media screen and (min-height: 568px) and (min-width: 1025px) {
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: 40rem 40rem;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 3vmin;
+    padding: calc(1rem + 2vmin) 0;
+
+    .card {
+      margin:0;
+      padding: 2vmin;
+
+      h3 {
+        font-size: calc(0.9rem + 0.7vmin);
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      button {
+        font-size: 1em;
+      }
+    }
+
+    .btnContainer {
+      .buttons {
+        gap: 1.2rem;
+      }
+
+      .demoBtn {
+        font-size: calc(1rem + 0.2vmin);
+        padding: calc(0.4rem + 0.2vmin) calc(1rem + 0.8vmin);
+      }
+
+      .gitBtn {
+        font-size: calc(1rem + 0.2vmin);
+      }
     }
   }
 }

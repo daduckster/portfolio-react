@@ -1,0 +1,177 @@
+@import '../../_variables.scss';
+@import "./HeroCubesMixins.scss";
+
+//-------------------------
+.shape1 {
+  @include cubeArrows(0deg)
+}
+
+.shape2 {
+  @include cubeArrows(90deg)
+}
+
+.shape3 {
+  @include cubeArrows(180deg)
+}
+
+.shape4 {
+  @include cubeArrows(270deg)
+}
+
+//-------------------------
+.shape5 {
+  @include halfBlueCircle(0deg)
+}
+
+.shape6 {
+  @include halfBlueCircle(90deg)
+}
+
+.shape7 {
+  @include halfBlueCircle(180deg)
+}
+
+.shape8 {
+  @include halfBlueCircle(270deg)
+}
+
+//-------------------------
+.shape9 {
+  @include blueHalfCircle(0deg)
+}
+
+.shape10 {
+  @include blueHalfCircle(90deg)
+}
+
+.shape11 {
+  @include blueHalfCircle(180deg)
+}
+
+.shape12 {
+  @include blueHalfCircle(270deg)
+}
+
+//-------------------------
+.shape13 {
+  @include halfCircleHalfBlue(0deg)
+}
+
+.shape14 {
+  @include halfCircleHalfBlue(90deg)
+}
+
+.shape15 {
+  @include halfCircleHalfBlue(180deg)
+}
+
+.shape16 {
+  @include halfCircleHalfBlue(270deg)
+}
+
+//-------------------------
+.shape17 {
+  @include halfRectangle(0deg)
+}
+
+.shape18 {
+  @include halfRectangle(90deg)
+}
+
+.shape19 {
+  @include halfRectangle(180deg)
+}
+
+.shape20 {
+  @include halfRectangle(270deg)
+}
+
+//-------------------------
+.shape21 {
+  @include quarterCircle(0deg)
+}
+
+.shape22 {
+  @include quarterCircle(90deg)
+}
+
+.shape23 {
+  @include quarterCircle(180deg)
+}
+
+.shape24 {
+  @include quarterCircle(270deg)
+}
+
+//-------------------------
+.shape25 {
+  @include halfCircleHalfBlueReverse(0deg)
+}
+
+.shape26 {
+  @include halfCircleHalfBlueReverse(90deg)
+}
+
+.shape27 {
+  @include halfCircleHalfBlueReverse(180deg)
+}
+
+.shape28 {
+  @include halfCircleHalfBlueReverse(270deg)
+}
+
+//-------------------------
+.shape29 {
+  @include quarterCircleBlue(0deg)
+}
+
+.shape29 {
+  @include quarterCircleBlue(90deg)
+}
+
+.shape29 {
+  @include quarterCircleBlue(180deg)
+}
+
+.shape29 {
+  @include quarterCircleBlue(270deg)
+}
+
+//-------------------------
+.shape30 {
+  @include whiteHalfCircle(0deg)
+}
+
+.shape31 {
+  @include whiteHalfCircle(90deg)
+}
+
+.shape32 {
+  @include whiteHalfCircle(180deg)
+}
+
+.shape33 {
+  @include whiteHalfCircle(270deg)
+}
+
+//-------------------------
+.shape34 {
+  @include halfWhiteHalfCircle(0deg)
+}
+
+.shape35 {
+  @include halfWhiteHalfCircle(90deg)
+}
+
+.shape36 {
+  @include halfWhiteHalfCircle(180deg)
+}
+
+.shape37 {
+  @include halfWhiteHalfCircle(270deg)
+}
+
+//-------------------------
+.cube1 {
+  @include halfWhiteHalfCircle(0deg)
+}

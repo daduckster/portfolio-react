@@ -51,3 +51,69 @@
     }
   }
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE - HORIZONTAL
+@media screen and (max-height: 567px) {
+  .techContainer {
+    padding: 0;
+    width: 140vmin;
+    margin: auto;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// TABLET
+@media screen and (min-height: 568px) and (min-width: 613px) {
+  .techContainer {
+    padding: 0 3vmin;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP + IPAD PRO HORIZONTAL
+@media screen and (min-height: 568px) and (min-width: 1025px) {
+  .techContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 98.4vmin;
+    margin: calc(1.5rem + 6.5vmin) auto auto auto;
+  }
+
+  .headerContainer {
+    margin: 0;
+
+    h2 {
+      font-size: calc(0.7rem + 2vmin);
+    }
+
+    .forwardIcon {
+      width: calc(1rem + 2.5vmin);
+      height: calc(1rem + 2.5vmin);
+    }
+  }
+
+  .iconsContainer {
+    width: 61.5vmin;
+
+    .column {
+      gap: 2.5vmin;
+
+      .item {
+        .icon {
+          width: calc(0.4rem + 2.5vmin);
+          height: calc(0.4rem + 2.5vmin);
+          margin-right: 0.7vmin;
+        }
+
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
