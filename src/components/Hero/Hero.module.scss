@@ -3,7 +3,7 @@
 .heroContainer {
   display:grid;
   justify-content: flex-end;
-  max-width:62rem;
+  max-width:64rem;
   width:100vw;
   grid-template-columns: repeat(4, 25vmin);
   grid-template-rows: repeat(6, 25vmin);
@@ -24,12 +24,13 @@
   justify-content: center;
 
   p {
-    font-size: 5.7vmin;
-    margin-bottom: 1.7vmin;
+    font-size: calc(0.5rem + 3.2vmin);
+    margin-bottom: calc(0.1rem + 0.9vmin);
   }
 
   h1 {
-    font-size: 10vmin;
+    font-size: calc(0.8rem + 6.3vmin);
+    font-weight: 900;
     margin-bottom: 4vmin;
   }
 }
@@ -38,18 +39,20 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 2.5vmin;
+  padding: 0 3vmin;
 
   .projectBtn {
+    cursor: pointer;
     text-decoration: none;
     color: black;
-    font-size: 5.7vmin;
+    font-size: calc(0.9rem + 1vmin);
     background-color: $accent;
     border-radius: 3px;
-    padding: 2vmin 4vmin;
+    padding: calc(0.3rem + 1vmin) calc(0.7rem + 2.5vmin);
   }
 
   .contactContainer {
+    cursor: pointer;
     display: flex;
     align-items: center;
 
@@ -57,16 +60,14 @@
       display: flex;
       text-decoration: none;
       color: black;
-      font-size: 5.7vmin;
+      font-size: calc(0.9rem + 1vmin);
     }
 
     .contactIcon {
-      height: 5.7vmin;
-      width: 5.7vmin;
+      height: calc(0.9rem + 1vmin);
+      width: calc(0.9rem + 1vmin);
       margin-right: 1vmin;
     }
-
-
   }
 
 }

@@ -1,24 +1,25 @@
 @import '../../_variables.scss';
 
 .techContainer {
-  max-width: 62rem;
-  padding: 0 2.5vmin;
+  max-width: 64rem;
+  padding: 0 3vmin;
 }
 
 .headerContainer {
   display: flex;
   align-items: center;
-  margin: 13vmin 0;
+  margin-top: calc(3rem + 5vmin);
+  margin-bottom: calc(1.5rem + 3vmin);
 
   h2 {
-    font-size: 8vmin;
+    font-size: calc(1.8rem + 0.7vmin);
     font-weight: 700;
   }
 
   .forwardIcon {
     color: $pink;
-    width: 10vmin;
-    height: 10vmin;
+    width: calc(2rem + 1vmin);
+    height: calc(2rem + 1vmin);
   }
 }
 
@@ -35,15 +36,15 @@
       display: flex;
       align-items: center;
 
-      p {
-        font-size: 4vmin;
-      };
-
       .icon {
-        width: 8vmin;
-        height: 8vmin;
+        width: calc(1rem + 3vmin);
+        height: calc(1rem + 3vmin);
         margin-right: 1.5vmin;
       }
+
+      p {
+        font-size: calc(0.7rem + 1vmin);
+      };
     }
   }
 }

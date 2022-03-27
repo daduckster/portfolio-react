@@ -1,1 +1,58 @@
 @import '../../_variables.scss';
+
+.aboutContainer {
+  max-width: 64rem;
+  padding: 0 3vmin;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  margin-top: calc(3rem + 5vmin);
+  margin-bottom: calc(1.5rem + 3vmin);
+
+  h2 {
+    font-size: calc(1.8rem + 0.7vmin);
+    font-weight: 700;
+  }
+
+  .forwardIcon {
+    color: $pink;
+    width: calc(2rem + 1vmin);
+    height: calc(2rem + 1vmin);
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-size: calc(0.9rem + 0.5vmin);
+  }
+
+  h3 {
+    font-size: calc(1.2rem + 0.4vmin);
+    margin-top: calc(2rem + 1.5vmin);
+    margin-bottom: calc(0.6rem + 0.8vmin);
+    color: $pink;
+  }
+
+  .element{
+    display: flex;
+    align-items: center;
+    margin-bottom: calc(0.3rem + 0.3vmin);
+
+    div {
+      width: calc(0.8rem + 0.2vmin);
+      height: calc(0.8rem + 0.2vmin);
+      background-color: $blue;
+      margin-right: 0.4rem;
+    }
+
+    p {
+      font-size: calc(0.9rem + 0.5vmin);
+    }
+  }
+}

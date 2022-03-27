@@ -1,1 +1,11 @@
 @import '../../_variables.scss';
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  padding: 3vmin 3vmin 1vmin 3vmin ;
+
+  p {
+    text-align: center;
+  }
+}

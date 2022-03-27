@@ -3,8 +3,8 @@ import styles from './Footer.module.scss'
 
 function Footer(props) {
   return (
-    <div>
-      Footer
+    <div className={styles.footerContainer}>
+      <p>© 2022 by Olya Vlasak - olyavlasak@gmail.com</p>
     </div>
   );
 }

@@ -10,10 +10,11 @@
 .hamburgerContainer{
   display: flex;
   justify-content: flex-end;
-  padding: 2.5vmin 2.5vmin;
+  padding: 2.5vmin 3vmin;
 
   .hamburgerIcon{
-    width: 6vmin;
+    cursor: pointer;
+    width: calc(0.7rem + 3vmin);
     height: auto;
   }
 }
