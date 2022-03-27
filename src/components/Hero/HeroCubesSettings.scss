@@ -1,0 +1,133 @@
+@import '../../_variables.scss';
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE
+
+.cubesMobile {
+  width: 100%;
+  height: 100%;
+}
+
+.cubesTablet {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.cubesDesktop {
+  display:none;
+  width: 100%;
+  height: 100%;
+}
+
+.cube1{
+  grid-area: cube1;
+}
+
+.cube2{
+  grid-area: cube2;
+}
+
+.cube3{
+  grid-area: cube3;
+}
+
+.cube4{
+  grid-area: cube4;
+}
+
+.cube5{
+  grid-area: cube5;
+}
+
+.cube6{
+  grid-area: cube6;
+}
+
+.cube7{
+  grid-area: cube7;
+}
+
+.cube8{
+  grid-area: cube8;
+}
+
+.cube9{
+  grid-area: cube9;
+}
+
+.cube10{
+  grid-area: cube10;
+}
+
+.cube11{
+  grid-area: cube11;
+}
+
+.cube12{
+  grid-area: cube12;
+}
+
+.cube13{
+  grid-area: cube13;
+}
+
+.cube14{
+  grid-area: cube14;
+}
+
+.cube15{
+  grid-area: cube15;
+}
+
+.cube16{
+  grid-area: cube16;
+}
+
+.cube17{
+  grid-area: cube17;
+}
+
+.cube18{
+  grid-area: cube18;
+}
+
+.cube19{
+  grid-area: cube19;
+}
+
+.cube20{
+  grid-area: cube20;
+}
+
+.cube21{
+  grid-area: cube21;
+}
+
+.cube22{
+  grid-area: cube22;
+}
+
+.cube23{
+  grid-area: cube23;
+}
+
+.cube24{
+  grid-area: cube24;
+}
+
+.cube25{
+  grid-area: cube25;
+}
+
+.cube26{
+  grid-area: cube26;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// TABLET
+@media screen and (min-height: 568px) and (min-width: 613px) {
+  .cubesTablet {
+    display: flex;
+  }
+}
