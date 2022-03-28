@@ -19,6 +19,7 @@
 // DESKTOP + IPAD PRO HORIZONTAL
 @media screen and (min-height: 568px) and (min-width: 1366px) {
   .footerContainer {
+    padding: calc(0.7rem + 1vmin) 3vmin 1vmin 3vmin;
     p {
       font-size: 1em;
     }

@@ -96,7 +96,7 @@
     align-items: flex-start;
     padding: 0;
     width: 98.4vmin;
-    margin: calc(1.5rem + 6.5vmin) auto auto auto;
+    margin: calc(1.5rem + 10vmin) auto auto auto;
   }
 
   .headerContainer {
@@ -117,8 +117,8 @@
     width: 61.5vmin;
 
     .element {
-      margin-top: calc(2.5rem + 1vmin);
-      margin-bottom: calc(2.5rem + 1vmin);
+      margin-top: calc(2.5rem + 3vmin);
+      margin-bottom: calc(2.5rem + 3vmin);
 
       .networkIcon {
         width: calc(0.6rem + 3vmin);
