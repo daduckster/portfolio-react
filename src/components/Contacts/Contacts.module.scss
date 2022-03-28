@@ -76,7 +76,7 @@
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
   .contactsContainer {
-    padding: 0 3vmin;
+    padding: 0 3vw;
     width: 100%;
     margin: 0;
   }
@@ -89,7 +89,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // DESKTOP + IPAD PRO HORIZONTAL
-@media screen and (min-height: 568px) and (min-width: 1025px) {
+@media screen and (min-height: 568px) and (min-width: 1366px) {
   .contactsContainer {
     display: flex;
     justify-content: space-between;

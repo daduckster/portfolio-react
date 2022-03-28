@@ -102,11 +102,11 @@
     grid-template-areas:
             'cube1 . cube2 cube3 cube4 cube5'
             'cube6 cube7 . cube8 . cube9'
+            'cube10 . cube11 . cube12 cube13'
             'header header header header header header'
             'header header header header header header'
-            'header header header header header header'
-            'cube10 . cube11 cube12 . cube13'
-            '. cube14 . . cube15 .'
+            'cube14 . cube15 cube16 . cube17'
+            '. cube18 cube19 . cube20 .'
   }
 
   .btnContainer {
@@ -117,19 +117,19 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // DESKTOP + IPAD PRO HORIZONTAL
-@media screen and (min-height: 568px) and (min-width: 1025px) {
+@media screen and (min-height: 568px) and (min-width: 1366px) {
   .heroContainer {
     margin: auto;
     grid-template-columns: repeat(8, 12.3vmin);
     grid-template-rows: repeat(7, 12.3vmin);
     grid-template-areas:
             'cube1 . cube2 cube3 cube4 cube5 cube6 cube7'
-            '. cube8 cube9 . cube10 cube11 cube12 cube13'
-            '. . . . cube14 . cube15 cube16'
-            'header header header header header header . cube17'
-            'header header header header header header cube18 cube19'
-            '. . . . cube20 cube21 cube22 cube23'
-            '. . . cube24 . . cube25 cube26'
+            'cube8 cube9 cube10 . cube11 cube12 cube13 cube14'
+            '. . . cube15 cube16 . cube17 cube18'
+            'header header header header header header . cube19'
+            'header header header header header header cube20 cube21'
+            '. . . cube22 . cube23 cube24 cube25'
+            'cube26 . cube27 cube28 cube29 cube30 cube31 cube32'
   }
 
   .headerContainer {

@@ -85,7 +85,7 @@
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
   .aboutContainer {
-    padding: 0 3vmin;
+    padding: 0 3vw;
     width: 100%;
     margin: 0;
   }
@@ -93,7 +93,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // DESKTOP + IPAD PRO HORIZONTAL
-@media screen and (min-height: 568px) and (min-width: 1025px) {
+@media screen and (min-height: 568px) and (min-width: 1366px) {
   .headerContainer {
     width: 98.4vmin;
     margin: calc(1.5rem + 6.5vmin) auto calc(1.5rem + 2vmin) auto;

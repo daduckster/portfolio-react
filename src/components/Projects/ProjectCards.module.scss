@@ -106,7 +106,7 @@
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
   .cardsContainer {
-    padding: 0 3vmin;
+    padding: 0 3vw;
     width: 100%;
     margin: 0;
   }
@@ -133,7 +133,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // DESKTOP + IPAD PRO HORIZONTAL
-@media screen and (min-height: 568px) and (min-width: 1025px) {
+@media screen and (min-height: 568px) and (min-width: 1366px) {
   .cardsContainer {
     display: grid;
     grid-template-columns: 40rem 40rem;
