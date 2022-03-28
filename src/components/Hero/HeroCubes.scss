@@ -172,6 +172,149 @@
 }
 
 //-------------------------
-.cube1 {
-  @include halfWhiteHalfCircle(0deg)
+.shape38 {
+  @include halfTriangleHalfBlue(0deg)
 }
+
+.shape39 {
+  @include halfTriangleHalfBlue(90deg)
+}
+
+.shape40 {
+  @include halfTriangleHalfBlue(180deg)
+}
+
+.shape41 {
+  @include halfTriangleHalfBlue(270deg)
+}
+
+//-------------------------
+.shape42 {
+  @include halfTriangleHalfBlueReverse(0deg)
+}
+
+.shape43 {
+  @include halfTriangleHalfBlueReverse(90deg)
+}
+
+.shape44 {
+  @include halfTriangleHalfBlueReverse(180deg)
+}
+
+.shape45 {
+  @include halfTriangleHalfBlueReverse(270deg)
+}
+
+//-------------------------
+.shape46 {
+  @include BlueTriangle(0deg)
+}
+
+.shape47 {
+  @include BlueTriangle(90deg)
+}
+
+.shape48 {
+  @include BlueTriangle(180deg)
+}
+
+.shape49 {
+  @include BlueTriangle(270deg)
+}
+
+//-------------------------
+.shape50 {
+  @include BlueTriangleReverse(0deg)
+}
+
+.shape51 {
+  @include BlueTriangleReverse(90deg)
+}
+
+.shape52 {
+  @include BlueTriangleReverse(180deg)
+}
+
+.shape53 {
+  @include BlueTriangleReverse(270deg)
+}
+
+//-------------------------
+.shape54 {
+  @include diagonalTriangle(0deg)
+}
+
+.shape55 {
+  @include diagonalTriangle(90deg)
+}
+
+.shape56 {
+  @include diagonalTriangle(180deg)
+}
+
+.shape57 {
+  @include diagonalTriangle(270deg)
+}
+
+//-------------------------
+.shape58 {
+  @include quarterSquares(0deg)
+}
+
+.shape59 {
+  @include quarterSquares(90deg)
+}
+
+//-------------------------
+.shape60 {
+  @include centerArrows(0deg)
+}
+
+.shape60 {
+  @include centerArrows(90deg)
+}
+
+//-------------------------
+.shape61 {
+  @include whiteCircle(0deg)
+}
+
+//-------------------------
+.shape62 {
+  @include blueCircle(0deg)
+}
+
+//-------------------------
+.shape63 {
+  @include whiteTriangle(0deg)
+}
+
+.shape64 {
+  @include whiteTriangle(90deg)
+}
+
+.shape65 {
+  @include whiteTriangle(180deg)
+}
+
+.shape66 {
+  @include whiteTriangle(270deg)
+}
+
+//-------------------------
+.shape67 {
+  @include whiteTriangleReverse(0deg)
+}
+
+.shape68 {
+  @include whiteTriangleReverse(90deg)
+}
+
+.shape69 {
+  @include whiteTriangleReverse(180deg)
+}
+
+.shape70 {
+  @include whiteTriangleReverse(270deg)
+}
+
