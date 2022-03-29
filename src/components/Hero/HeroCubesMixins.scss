@@ -20,9 +20,8 @@
   z-index: 1;
 }
 
-@mixin cubeArrows ($rotation) {
+@mixin cubeArrows0 () {
   position: relative;
-  transform: rotate($rotation);
 
   &::before {
     @include before();
@@ -34,9 +33,49 @@
   }
 }
 
-@mixin halfBlueCircle ($rotation) {
+@mixin cubeArrows90 () {
   position: relative;
-  transform: rotate($rotation);
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 50%, 50% 0, 100% 50%, 50% 100%, 50% 50%, 0 100%, 0 0);
+  }
+}
+
+@mixin cubeArrows180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0 50%, 50% 50%, 0 0, 100% 0);
+  }
+}
+
+@mixin cubeArrows270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 50%, 50% 100%, 0 50%, 50% 0, 50% 50%, 100% 0, 100% 100%);
+  }
+}
+
+//-------------------------
+
+@mixin halfBlueCircle0 () {
+  position: relative;
 
   &::before {
     @include before();
@@ -49,9 +88,51 @@
   }
 }
 
-@mixin blueHalfCircle ($rotation) {
+@mixin halfBlueCircle90 () {
   position: relative;
-  transform: rotate($rotation);
+
+  &::before {
+    @include before();
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+
+@mixin halfBlueCircle180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    clip-path: polygon(50% 0, 50% 100%, 0 100%, 0 0);
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+
+@mixin halfBlueCircle270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    clip-path: polygon(100% 50%, 0 50%, 0 0, 100% 0);
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+
+//-------------------------
+@mixin blueHalfCircle0 () {
+  position: relative;
 
   &::before {
     @include before();
@@ -62,6 +143,579 @@
     clip-path: circle(50% at 0 50%) ;
   }
 }
+
+@mixin blueHalfCircle90 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(50% at 50% 0);
+  }
+}
+
+@mixin blueHalfCircle180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(50% at 100% 50%);
+  }
+}
+
+@mixin blueHalfCircle270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(50% at 50% 100%);
+  }
+}
+
+//-------------------------
+@mixin halfRectangle0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+}
+
+@mixin halfRectangle90() {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+  }
+}
+
+@mixin halfRectangle180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 0, 50% 100%, 0 100%, 0 0);
+  }
+}
+
+@mixin halfRectangle270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(100% 50%, 0 50%, 0 0, 100% 0);
+  }
+}
+
+//-------------------------
+@mixin quarterCircle0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    background-color: transparent;
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(100.0% at 0 100%);
+  }
+}
+
+@mixin quarterCircle90 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    background-color: transparent;
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(100.0% at 0 0);
+  }
+}
+
+@mixin quarterCircle180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    background-color: transparent;
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(100.0% at 100% 0);
+  }
+}
+
+@mixin quarterCircle270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    background-color: transparent;
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(100.0% at 100% 100%);
+  }
+}
+
+//-------------------------
+@mixin halfCircleHalfBlueReverse0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    background-color: $pink;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  &::after {
+    @include after();
+    background-color: $blue;
+    mix-blend-mode: normal;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+}
+
+@mixin halfCircleHalfBlueReverse90 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    background-color: $pink;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  &::after {
+    @include after();
+    background-color: $blue;
+    mix-blend-mode: normal;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+  }
+}
+
+@mixin halfCircleHalfBlueReverse180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    background-color: $pink;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  &::after {
+    @include after();
+    background-color: $blue;
+    mix-blend-mode: normal;
+    clip-path: polygon(50% 0, 50% 100%, 0 100%, 0 0);
+  }
+}
+
+@mixin halfCircleHalfBlueReverse270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    background-color: $pink;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  &::after {
+    @include after();
+    background-color: $blue;
+    mix-blend-mode: normal;
+    clip-path: polygon(100% 50%, 0 50%, 0 0, 100% 0);
+  }
+}
+
+//-------------------------
+@mixin quarterCircleBlue0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(100.0% at 0 100%);
+  }
+}
+
+@mixin quarterCircleBlue90 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(100.0% at 0 0);
+  }
+}
+
+@mixin quarterCircleBlue180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(100.0% at 100% 0);
+  }
+}
+
+@mixin quarterCircleBlue270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(100.0% at 100% 100%);
+  }
+}
+
+//-------------------------
+@mixin halfTriangleHalfBlueReverse0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(0 50%, 50% 0, 50% 100%);
+  }
+}
+
+@mixin halfTriangleHalfBlueReverse90 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    clip-path: polygon(100% 50%, 100% 100%, 0 100%, 0 50%);
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 0%, 0 50%, 100% 50%);
+  }
+}
+
+@mixin halfTriangleHalfBlueReverse180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    clip-path: polygon(50% 100%, 0 100%, 0 0, 50% 0);
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(100% 50%, 50% 0, 50% 100%);
+  }
+}
+
+@mixin halfTriangleHalfBlueReverse270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%);
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 100%, 100% 50%, 0 50%);
+  }
+}
+
+//-------------------------
+@mixin BlueTriangle0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 50%, 0 0, 0 100%);
+  }
+}
+
+@mixin BlueTriangle90 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+  }
+}
+
+@mixin BlueTriangle180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+  }
+}
+
+@mixin BlueTriangle270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 50%, 100% 100%, 0 100%);
+  }
+}
+
+//-------------------------
+@mixin BlueTriangleReverse0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(0 50%, 50% 0, 50% 100%);
+  }
+}
+
+@mixin BlueTriangleReverse90 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 0, 100% 50%, 0 50%);
+  }
+}
+
+@mixin BlueTriangleReverse180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(100% 50%, 50% 100%, 50% 0);
+  }
+}
+
+@mixin BlueTriangleReverse270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(50% 100%, 0 50%, 100% 50%);
+  }
+}
+
+//-------------------------
+@mixin diagonalTriangle0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  }
+}
+
+@mixin diagonalTriangle90 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(0 100%, 0 0, 100% 100%);
+  }
+}
+
+@mixin diagonalTriangle180 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+}
+
+@mixin diagonalTriangle270 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+  }
+}
+
+//-------------------------
+@mixin centerArrows0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(0 0, 50% 50%, 100% 0, 100% 100%, 50% 50%, 0 100%);
+  }
+}
+
+@mixin centerArrows90 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: polygon(100% 0, 50% 50%, 100% 100%, 0 100%, 50% 50%, 0 0);
+  }
+}
+
+//-------------------------
+@mixin whiteCircle0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+    background-color: transparent;
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+
+//-------------------------
+@mixin blueCircle0 () {
+  position: relative;
+
+  &::before {
+    @include before();
+  }
+
+  &::after {
+    @include after();
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+
+//@mixin whiteTriangle ($rotation) {
+//  position: relative;
+//  transform: rotate($rotation);
+//
+//  &::before {
+//    @include before();
+//    background-color: transparent;
+//  }
+//
+//  &::after {
+//    @include after();
+//    clip-path: polygon(50% 50%, 0 0, 0 100%);
+//  }
+//}
+//
+//@mixin whiteTriangleReverse ($rotation) {
+//  position: relative;
+//  transform: rotate($rotation);
+//
+//  &::before {
+//    @include before();
+//    background-color: transparent;
+//  }
+//
+//  &::after {
+//    @include after();
+//    clip-path: polygon(0 50%, 50% 0, 50% 100%);
+//  }
+//}
 
 //@mixin halfCircleHalfBlue ($rotation) {
 //  position: relative;
@@ -78,66 +732,6 @@
 //  }
 //}
 
-@mixin halfRectangle ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-  }
-
-  &::after {
-    @include after();
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
-  }
-}
-
-@mixin quarterCircle ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-    background-color: transparent;
-  }
-
-  &::after {
-    @include after();
-    clip-path: circle(100.0% at 0 100%);
-  }
-}
-
-@mixin halfCircleHalfBlueReverse ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-    background-color: $pink;
-    clip-path: circle(50% at 50% 50%);
-  }
-
-  &::after {
-    @include after();
-    background-color: $blue;
-    mix-blend-mode: normal;
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
-  }
-}
-
-@mixin quarterCircleBlue ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-  }
-
-  &::after {
-    @include after();
-    clip-path: circle(100.0% at 0 100%);
-  }
-}
 
 //@mixin whiteHalfCircle ($rotation) {
 //  position: relative;
@@ -187,147 +781,16 @@
 //  }
 //}
 
-@mixin halfTriangleHalfBlueReverse ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
-  }
-
-  &::after {
-    @include after();
-    clip-path: polygon(0 50%, 50% 0, 50% 100%);
-  }
-}
-
-@mixin BlueTriangle ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-  }
-
-  &::after {
-    @include after();
-    clip-path: polygon(50% 50%, 0 0, 0 100%);
-  }
-}
-
-@mixin BlueTriangleReverse ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-  }
-
-  &::after {
-    @include after();
-    clip-path: polygon(0 50%, 50% 0, 50% 100%);
-  }
-}
-
-@mixin diagonalTriangle ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-  }
-
-  &::after {
-    @include after();
-    clip-path: polygon(0 100%, 100% 0, 100% 100%);
-  }
-}
-
-@mixin quarterSquares ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-  }
-
-  &::after {
-    @include after();
-    clip-path: polygon(50% 0, 50% 50%, 100% 50%, 100% 100%, 50% 100%, 50% 50%, 0 50%, 0 0);
-  }
-}
-
-@mixin centerArrows ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-  }
-
-  &::after {
-    @include after();
-    clip-path: polygon(0 0, 50% 50%, 100% 0, 100% 100%, 50% 50%, 0 100%);
-  }
-}
-
-@mixin whiteCircle ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-    background-color: transparent;
-  }
-
-  &::after {
-    @include after();
-    clip-path: circle(50% at 50% 50%);
-  }
-}
-
-@mixin blueCircle ($rotation) {
-  position: relative;
-  transform: rotate($rotation);
-
-  &::before {
-    @include before();
-  }
-
-  &::after {
-    @include after();
-    clip-path: circle(50% at 50% 50%);
-  }
-}
-
-//@mixin whiteTriangle ($rotation) {
+//@mixin quarterSquares ($rotation) {
 //  position: relative;
 //  transform: rotate($rotation);
 //
 //  &::before {
 //    @include before();
-//    background-color: transparent;
 //  }
 //
 //  &::after {
 //    @include after();
-//    clip-path: polygon(50% 50%, 0 0, 0 100%);
+//    clip-path: polygon(50% 0, 50% 50%, 100% 50%, 100% 100%, 50% 100%, 50% 50%, 0 50%, 0 0);
 //  }
 //}
-//
-//@mixin whiteTriangleReverse ($rotation) {
-//  position: relative;
-//  transform: rotate($rotation);
-//
-//  &::before {
-//    @include before();
-//    background-color: transparent;
-//  }
-//
-//  &::after {
-//    @include after();
-//    clip-path: polygon(0 50%, 50% 0, 50% 100%);
-//  }
-//}
-

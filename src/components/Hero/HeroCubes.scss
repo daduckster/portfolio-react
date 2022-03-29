@@ -3,216 +3,207 @@
 
 //-------------------------
 .shape1 {
-  @include cubeArrows(0deg)
+  @include cubeArrows0()
 }
 
 .shape2 {
-  @include cubeArrows(90deg)
+  @include cubeArrows90()
 }
 
 .shape3 {
-  @include cubeArrows(180deg)
+  @include cubeArrows180()
 }
 
 .shape4 {
-  @include cubeArrows(270deg)
+  @include cubeArrows270()
 }
 
 //-------------------------
-.shape5 {
-  @include halfBlueCircle(0deg)
+.shape5{
+  @include halfBlueCircle0()
 }
 
 .shape6 {
-  @include halfBlueCircle(90deg)
+  @include halfBlueCircle90()
 }
 
 .shape7 {
-  @include halfBlueCircle(180deg)
+  @include halfBlueCircle180()
 }
 
 .shape8 {
-  @include halfBlueCircle(270deg)
+  @include halfBlueCircle270()
 }
 
 //-------------------------
 .shape9 {
-  @include blueHalfCircle(0deg)
+  @include blueHalfCircle0()
 }
 
 .shape10 {
-  @include blueHalfCircle(90deg)
+  @include blueHalfCircle90()
 }
 
 .shape11 {
-  @include blueHalfCircle(180deg)
+  @include blueHalfCircle180()
 }
 
 .shape12 {
-  @include blueHalfCircle(270deg)
+  @include blueHalfCircle270()
 }
 
 //-------------------------
 .shape13 {
-  @include halfRectangle(0deg)
+  @include halfRectangle0()
 }
 
 .shape14 {
-  @include halfRectangle(90deg)
+  @include halfRectangle90()
 }
 
 .shape15 {
-  @include halfRectangle(180deg)
+  @include halfRectangle180()
 }
 
 .shape16 {
-  @include halfRectangle(270deg)
+  @include halfRectangle270()
 }
 
 //-------------------------
 .shape17 {
-  @include quarterCircle(0deg)
+  @include quarterCircle0()
 }
 
 .shape18 {
-  @include quarterCircle(90deg)
+  @include quarterCircle90()
 }
 
 .shape19 {
-  @include quarterCircle(180deg)
+  @include quarterCircle180()
 }
 
 .shape20 {
-  @include quarterCircle(270deg)
+  @include quarterCircle270()
 }
 
 //-------------------------
 .shape21 {
-  @include halfCircleHalfBlueReverse(0deg)
+  @include halfCircleHalfBlueReverse0()
 }
 
 .shape22 {
-  @include halfCircleHalfBlueReverse(90deg)
+  @include halfCircleHalfBlueReverse90()
 }
 
 .shape23 {
-  @include halfCircleHalfBlueReverse(180deg)
+  @include halfCircleHalfBlueReverse180()
 }
 
 .shape24 {
-  @include halfCircleHalfBlueReverse(270deg)
+  @include halfCircleHalfBlueReverse270()
 }
 
 //-------------------------
 .shape25 {
-  @include quarterCircleBlue(0deg)
+  @include quarterCircleBlue0()
 }
 
 .shape26 {
-  @include quarterCircleBlue(90deg)
+  @include quarterCircleBlue90()
 }
 
 .shape27 {
-  @include quarterCircleBlue(180deg)
+  @include quarterCircleBlue180()
 }
 
 .shape28 {
-  @include quarterCircleBlue(270deg)
+  @include quarterCircleBlue270()
 }
 
 //-------------------------
 .shape29 {
-  @include halfTriangleHalfBlueReverse(0deg)
+  @include halfTriangleHalfBlueReverse0()
 }
 
 .shape30 {
-  @include halfTriangleHalfBlueReverse(90deg)
+  @include halfTriangleHalfBlueReverse90()
 }
 
 .shape31 {
-  @include halfTriangleHalfBlueReverse(180deg)
+  @include halfTriangleHalfBlueReverse180()
 }
 
 .shape32 {
-  @include halfTriangleHalfBlueReverse(270deg)
+  @include halfTriangleHalfBlueReverse270()
 }
 
 //-------------------------
 .shape33 {
-  @include BlueTriangle(0deg)
+  @include BlueTriangle0()
 }
 
 .shape34 {
-  @include BlueTriangle(90deg)
+  @include BlueTriangle90()
 }
 
 .shape35 {
-  @include BlueTriangle(180deg)
+  @include BlueTriangle180()
 }
 
 .shape36 {
-  @include BlueTriangle(270deg)
+  @include BlueTriangle270()
 }
 
 //-------------------------
 .shape37 {
-  @include BlueTriangleReverse(0deg)
+  @include BlueTriangleReverse0()
 }
 
 .shape38 {
-  @include BlueTriangleReverse(90deg)
+  @include BlueTriangleReverse90()
 }
 
 .shape39 {
-  @include BlueTriangleReverse(180deg)
+  @include BlueTriangleReverse180()
 }
 
 .shape40 {
-  @include BlueTriangleReverse(270deg)
+  @include BlueTriangleReverse270()
 }
 
 //-------------------------
 .shape41 {
-  @include diagonalTriangle(0deg)
+  @include diagonalTriangle0()
 }
 
 .shape42 {
-  @include diagonalTriangle(90deg)
+  @include diagonalTriangle90()
 }
 
 .shape43 {
-  @include diagonalTriangle(180deg)
+  @include diagonalTriangle180()
 }
 
 .shape44 {
-  @include diagonalTriangle(270deg)
+  @include diagonalTriangle270()
 }
 
 //-------------------------
 .shape45 {
-  @include quarterSquares(0deg)
+  @include centerArrows0()
 }
 
 .shape46 {
-  @include quarterSquares(90deg)
+  @include centerArrows90()
 }
 
 //-------------------------
 .shape47 {
-  @include centerArrows(0deg)
+  @include whiteCircle0()
 }
 
+//-------------------------
 .shape48 {
-  @include centerArrows(90deg)
-}
-
-//-------------------------
-.shape49 {
-  @include whiteCircle(0deg)
-}
-
-//-------------------------
-.shape50 {
-  @include blueCircle(0deg)
+  @include blueCircle0()
 }
 
