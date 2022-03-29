@@ -15,8 +15,8 @@ function changingClassFactory(cube) {
         cube.classList.add(styles.animIn)
         setTimeout(() => {
           cube.classList.remove(styles.animIn)
-        }, 200)
-      }, 200)
+        }, 300)
+      }, 300)
 
     }
   })
@@ -36,7 +36,7 @@ function changeRandomClass() {
 export function changeRandomCubes() {
   return setInterval(() => {
     changeRandomClass()
-  }, 1000)
+  }, 1800)
 }
 
 export function createRandomShapeClass() {
