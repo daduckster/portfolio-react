@@ -1,23 +1,22 @@
 import React from 'react'
-import styles from './Projects.module.scss';
-import {AiFillForward} from "react-icons/ai";
 import ProjectsCards from "./ProjectsCards";
+import {AiFillForward} from "react-icons/ai";
+import styles from './Projects.module.scss';
 
 function Projects() {
   return (
-    <div className={styles.projectsContainer} id={'projects'}>
-      <div className={styles.headerContainer}>
+    <main className={styles.projectsContainer} id={'projects'}>
+      <header className={styles.headerContainer}>
         <h2>projects</h2>
         <AiFillForward className={styles.forwardIcon} />
-      </div>
+      </header>
 
       <div className={styles.contentsContainer}>
         <ProjectsCards />
-
-        <div className={styles.pinkSquare}></div>
-        <div className={styles.blueSquare}></div>
+        <div className={styles.pinkSquare}/>
+        <div className={styles.blueSquare}/>
       </div>
-    </div>
+    </main>
   )
 }
 

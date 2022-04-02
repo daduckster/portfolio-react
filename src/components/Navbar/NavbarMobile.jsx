@@ -3,7 +3,7 @@ import {handleClick, handleCloseMenu, smoothScroll} from "./navbarHelper";
 import styles from "./NavbarMobile.module.scss";
 import {GiHamburgerMenu} from "react-icons/gi";
 
-function NavbarMobile(props) {
+function NavbarMobile() {
 
   return (
     <div className={styles.hamburgerContainer}>
@@ -12,26 +12,26 @@ function NavbarMobile(props) {
       </div>
 
       <div className={`mobileMenu ${styles.container} ${styles.hidden}`}>
-        <div onClick={handleCloseMenu} className={`darken ${styles.darken}`}></div>
+        <div onClick={handleCloseMenu} className={`darken ${styles.darken}`}/>
         <div className={styles.mobileMenuContainer}>
           <div className={styles.mobileLinksContainer}>
-            <a href="#home" className={styles.link} onClick={(e) => {
+            <a href={"#home"} className={styles.link} onClick={(e) => {
               smoothScroll(e);
               handleCloseMenu();
             }}>home</a>
-            <a href="#tech" className={styles.link} onClick={(e) => {
+            <a href={"#tech"} className={styles.link} onClick={(e) => {
               smoothScroll(e);
               handleCloseMenu();
             }}>tech</a>
-            <a href="#projects" className={styles.link} onClick={(e) => {
+            <a href={"#projects"} className={styles.link} onClick={(e) => {
               smoothScroll(e);
               handleCloseMenu();
             }}>projects</a>
-            <a href="#about" className={styles.link} onClick={(e) => {
+            <a href={"#about"} className={styles.link} onClick={(e) => {
               smoothScroll(e);
               handleCloseMenu();
             }}>about me</a>
-            <a href="#contacts" className={styles.link} onClick={(e) => {
+            <a href={"#contacts"} className={styles.link} onClick={(e) => {
               smoothScroll(e);
               handleCloseMenu();
             }}>contacts</a>

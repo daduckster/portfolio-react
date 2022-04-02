@@ -7,14 +7,13 @@ import styles from './Tech.module.scss';
 
 function Tech() {
   return (
-    <div className={styles.techContainer} id={'tech'}>
-      <div className={styles.headerContainer}>
+    <section className={styles.techContainer} id={'tech'}>
+      <header className={styles.headerContainer}>
         <h2>tech</h2>
         <AiFillForward className={styles.forwardIcon} />
-      </div>
+      </header>
 
       <div className={styles.iconsContainer}>
-
         <div className={styles.column}>
           <div className={styles.item}>
             <SiHtml5 className={styles.icon} />
@@ -60,7 +59,7 @@ function Tech() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
