@@ -1,0 +1,90 @@
+@import '../../_variables.scss';
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// MOBILE
+.hamburgerContainer{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1vmin 1.8vmin;
+  margin-bottom: 8vmin;
+
+  .circle {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 252, 249, 0.75);
+    padding: 1vmin;
+    border-radius: 50%;
+    z-index: 2;
+
+    .hamburgerIcon{
+      cursor: pointer;
+      width: calc(0.7rem + 3vmin);
+      height: calc(0.7rem + 3vmin);
+      color: $gray;
+    }
+  }
+
+
+}
+
+.active {
+  color: $accent !important;
+}
+
+.container {
+  position: fixed;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.darken {
+  background-color: rgba(3, 19, 63, 0.25);
+  width: 60%;
+}
+
+.mobileMenuContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: $bg;
+  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.35);
+}
+
+.mobileLinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5vmin;
+}
+
+.link {
+  cursor: pointer;
+  color: $gray;
+  text-decoration: none;
+  font-size: 1.13em;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// TABLET
+@media screen and (min-height: 568px) and (min-width: 613px) {
+  .hamburgerContainer {
+    display: none;
+  }
+}

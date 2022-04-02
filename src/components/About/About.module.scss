@@ -4,13 +4,12 @@
 // MOBILE
 
 .aboutContainer {
-  padding: 0 3vmin;
+  padding: calc(3rem + 5vmin) 3vmin 0 3vmin;
 }
 
 .headerContainer {
   display: flex;
   align-items: center;
-  margin-top: calc(3rem + 5vmin);
   margin-bottom: calc(1.5rem + 3vmin);
 
   h2 {
@@ -75,7 +74,7 @@
 // MOBILE - HORIZONTAL
 @media screen and (max-height: 567px) {
   .aboutContainer {
-    padding: 0;
+    padding: calc(3rem + 5vmin) 0 0 0;
     width: 140vmin;
     margin: auto;
   }
@@ -85,7 +84,7 @@
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
   .aboutContainer {
-    padding: 0 3vw;
+    padding: calc(3rem + 5vmin) 3vw 0 3vw;
     width: 100%;
     margin: 0;
   }
@@ -94,9 +93,15 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 // DESKTOP + IPAD PRO HORIZONTAL
 @media screen and (min-height: 568px) and (min-width: 1366px) {
+
+  .aboutContainer {
+    padding: calc(1.5rem + 10vmin) 0 0 0;
+  }
+
+
   .headerContainer {
     width: 98.4vmin;
-    margin: calc(1.5rem + 10vmin) auto calc(1.5rem + 2vmin) auto;
+    margin: 0 auto calc(1.5rem + 2vmin) auto;
 
     h2 {
       font-size: calc(0.7rem + 2vmin);

@@ -7,7 +7,7 @@ import styles from './Tech.module.scss';
 
 function Tech() {
   return (
-    <div className={styles.techContainer}>
+    <div className={styles.techContainer} id={'tech'}>
       <div className={styles.headerContainer}>
         <h2>tech</h2>
         <AiFillForward className={styles.forwardIcon} />

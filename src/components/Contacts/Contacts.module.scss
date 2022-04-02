@@ -4,13 +4,12 @@
 // MOBILE
 
 .contactsContainer {
-  padding: 0 3vmin;
+  padding: calc(3rem + 5vmin) 3vmin 0 3vmin;
 }
 
 .headerContainer {
   display: flex;
   align-items: center;
-  margin-top: calc(3rem + 5vmin);
   margin-bottom: calc(1.5rem + 3vmin);
 
   h2 {
@@ -50,18 +49,49 @@
       font-size: calc(0.9rem + 1vmin);
       color: $link;
 
-      .linkIcon {
-        margin-left: 0.3rem;
+      &:hover {
+        color: $accent;
       }
     }
+
+    .emailBtn {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      font-size: calc(0.9rem + 1vmin);
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: underline;
+      color: $link;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+
+    .linkIcon {
+      margin-left: 0.3rem;
+    }
   }
+}
+
+.emailError {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: calc(0.9rem + 1vmin);
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: black;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // MOBILE - HORIZONTAL
 @media screen and (max-height: 567px) {
   .contactsContainer {
-    padding: 0;
+    padding: calc(3rem + 5vmin) 0 0 0;
     width: 140vmin;
     margin: auto;
   }
@@ -76,14 +106,14 @@
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
   .contactsContainer {
-    padding: 0 3vw;
+    padding: calc(3rem + 5vmin) 3vw 0 3vw;
     width: 100%;
     margin: 0;
   }
 
   .linksContainer {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -94,9 +124,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0;
+    padding: calc(1.5rem + 10vmin) 0 0 0;
     width: 98.4vmin;
-    margin: calc(1.5rem + 10vmin) auto auto auto;
+    margin: auto;
   }
 
   .headerContainer {
@@ -129,10 +159,28 @@
       a {
         font-size: calc(0.7rem + 0.8vmin);
 
-        .linkIcon {
-          margin-left: 0.5vmin;
+        &:active {
+          transform: scale(0.93);
+          color: $accent;
         }
       }
+
+      .emailBtn {
+        font-size: calc(0.7rem + 0.8vmin);
+
+        &:active {
+          transform: scale(0.93);
+          color: $accent;
+        }
+      }
+
+      .linkIcon {
+        margin-left: 0.5vmin;
+      }
+    }
+
+    .emailError {
+      font-size: calc(0.7rem + 0.8vmin);
     }
   }
 }

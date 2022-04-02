@@ -3,6 +3,18 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 // MOBILE
 
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .cardsContainer {
   padding: 0 3vmin;
 }
@@ -18,6 +30,7 @@
   background-color: white;
 
   img {
+    cursor: pointer;
     grid-area: img;
     width: 100%;
     height: auto;
@@ -37,7 +50,7 @@
     font-size: calc(0.9rem + 0.5vmin);
   }
 
-  button {
+  .moreBtn {
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -48,6 +61,10 @@
     font-weight: 500;
     font-style: italic;
     margin-left: 0.2rem;
+
+    &:hover {
+      color: $accent;
+    }
   }
 }
 
@@ -61,7 +78,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: calc(1rem + 2vmin);
+    gap: calc(1.5rem + 2vmin);
   }
 
   .demoBtn {
@@ -72,10 +89,17 @@
     background-color: $accent;
     border-radius: 3px;
     font-size: calc(0.9rem + 1vmin);
-    padding: calc(0.3rem + 1vmin) calc(0.7rem + 2.5vmin);
+    padding: calc(0.3rem + 0.5vmin) calc(0.7rem + 2.2vmin);
+    border: 0.2vmin solid transparent;
 
     .demoIcon {
       margin-right: 0.2rem;
+    }
+
+    &:hover {
+      color: $accent;
+      background-color: transparent;
+      border: 2px solid $accent;
     }
   }
 
@@ -89,7 +113,20 @@
     .gitIcon {
       margin-right: 0.2rem;
     }
+
+    &:hover {
+      color: $accent;
+    }
   }
+}
+
+.hidden {
+  display: none;
+}
+
+.moreSpan {
+  margin-left: 0.3em;
+  animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -113,8 +150,13 @@
 
   .card {
     grid-template-areas: 'h3 img' 'p img' 'btnContainer img';
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: auto auto 1fr;
+    height: fit-content;
+
+    //img {
+    //  margin: auto;
+    //}
 
     h3 {
       margin-top: 0;
@@ -122,7 +164,7 @@
     }
 
     p {
-    margin-right: 1rem;
+      margin-right: 1rem;
     }
 
     .btnContainer {
@@ -139,12 +181,13 @@
     grid-template-columns: 40rem 40rem;
     grid-template-rows: auto;
     justify-content: center;
-    gap: 3vmin;
+    gap: calc(0.2rem + 1.8vw);
     padding: calc(1rem + 2vmin) 0;
 
     .card {
       margin:0;
       padding: 2vmin;
+      grid-template-columns: 50% 50%;
 
       h3 {
         font-size: calc(0.9rem + 0.7vmin);
@@ -155,8 +198,13 @@
         font-size: 1em;
       }
 
-      button {
+      .moreBtn {
         font-size: 1em;
+
+        &:active {
+          transform: scale(0.93);
+          color: $accent;
+        }
       }
     }
 
@@ -168,10 +216,20 @@
       .demoBtn {
         font-size: calc(1rem + 0.2vmin);
         padding: calc(0.4rem + 0.2vmin) calc(1rem + 0.8vmin);
+
+        &:active {
+          transform: scale(0.93);
+          color: $accent;
+        }
       }
 
       .gitBtn {
         font-size: calc(1rem + 0.2vmin);
+
+        &:active {
+          transform: scale(0.93);
+          color: $accent;
+        }
       }
     }
   }

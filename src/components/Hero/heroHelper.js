@@ -15,7 +15,7 @@ function changingClassFactory(cube) {
         cube.classList.add(styles.animIn)
         setTimeout(() => {
           cube.classList.remove(styles.animIn)
-        }, 300)
+        }, 600)
       }, 300)
 
     }
@@ -25,7 +25,7 @@ function changingClassFactory(cube) {
 function changeRandomClass() {
   const randomCubeMobile = document.querySelector(`.cube${pickRandomNumberInInterval(1, 14)}`)
   const randomCubeTablet = document.querySelector(`.cube${pickRandomNumberInInterval(15, 26)}`)
-  const randomCubeDesktop = document.querySelector(`.cube${pickRandomNumberInInterval(27, 32)}`)
+  const randomCubeDesktop = document.querySelector(`.cube${pickRandomNumberInInterval(27, 33)}`)
 
   changingClassFactory(randomCubeMobile)
   changingClassFactory(randomCubeTablet)
@@ -37,6 +37,24 @@ export function changeRandomCubes() {
   return setInterval(() => {
     changeRandomClass()
   }, 1800)
+}
+
+export function handleClick(e) {
+  const classes = e.target.classList;
+  classes.forEach((classItem) => {
+    if (classItem.includes('shape')) {
+      e.target.classList.add(styles.animOut)
+      setTimeout(() => {
+        e.target.classList.remove(classItem);
+        e.target.classList.remove(styles.animOut)
+        e.target.classList.add(styles[createRandomShapeClass()]);
+        e.target.classList.add(styles.animIn)
+        setTimeout(() => {
+          e.target.classList.remove(styles.animIn)
+        }, 600)
+      }, 300)
+    }
+  })
 }
 
 export function createRandomShapeClass() {

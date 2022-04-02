@@ -4,7 +4,7 @@ import {AiFillForward} from "react-icons/ai";
 
 function About() {
   return (
-    <div className={styles.aboutContainer}>
+    <div className={styles.aboutContainer} id={'about'}>
       <div className={styles.headerContainer}>
         <h2>about me</h2>
         <AiFillForward className={styles.forwardIcon} />

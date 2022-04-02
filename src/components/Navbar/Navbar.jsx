@@ -1,20 +1,23 @@
 import React  from 'react'
-import {GiHamburgerMenu} from 'react-icons/gi'
+import {smoothScroll} from "./navbarHelper";
 import styles from './Navbar.module.scss';
+import NavbarMobile from "./NavbarMobile";
 
 function Navbar() {
 
+  function handleClick(e) {
+    e.target.scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  }
+
   return (
-    <div className={styles.navContainer}>
-      <div className={styles.hamburgerContainer}>
-        <GiHamburgerMenu className={styles.hamburgerIcon}/>
-      </div>
+    <div className={styles.navContainer} id={'home'}>
+      <NavbarMobile />
       <div className={styles.linkContainer}>
-        <a href="#" className={styles.link}>home</a>
-        <a href="#" className={styles.link}>tech</a>
-        <a href="#" className={styles.link}>projects</a>
-        <a href="#" className={styles.link}>about me</a>
-        <a href="#" className={styles.link}>contact</a>
+        <a href="#home" onClick={(e) => smoothScroll(e)} className={styles.link}>home</a>
+        <a href="#tech" onClick={(e) => smoothScroll(e)} className={styles.link}>tech</a>
+        <a href="#projects" onClick={(e) => smoothScroll(e)} className={styles.link}>projects</a>
+        <a href="#about" onClick={(e) => smoothScroll(e)}className={styles.link}>about me</a>
+        <a href="#contacts" onClick={(e) => smoothScroll(e)} className={styles.link}>contacts</a>
       </div>
     </div>
 

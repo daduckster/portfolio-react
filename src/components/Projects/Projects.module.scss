@@ -2,11 +2,13 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // MOBILE
+.projectsContainer {
+  padding-top: calc(3rem + 5vmin);
+}
 
 .headerContainer {
   display: flex;
   align-items: center;
-  margin-top: calc(3rem + 5vmin);
   margin-bottom: calc(1.5rem + 3vmin);
 
   h2 {
@@ -23,7 +25,7 @@
 }
 
 .contentsContainer {
-  border: 1px solid transparent;
+  border: 0.1px solid transparent;
   position: relative;
   width: 100vw;
 
@@ -53,20 +55,28 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 // MOBILE - HORIZONTAL
 @media screen and (max-height: 567px) {
+  .projectsContainer {
+    padding-top: calc(3rem + 5vmin);
+  }
+
   .headerContainer {
     padding: 0;
     width: 140vmin;
-    margin: calc(3rem + 5vmin) auto calc(1.5rem + 3vmin) auto;
+    margin: 0 auto calc(1.5rem + 3vmin) auto;
   }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // TABLET
 @media screen and (min-height: 568px) and (min-width: 613px) {
+  .projectsContainer {
+    padding-top: calc(3rem + 5vmin);
+  }
+
   .headerContainer {
     padding: 0;
     width: 100%;
-    margin: calc(3rem + 5vmin) 0 calc(1.5rem + 3vmin) 0;
+    margin: 0 0 calc(1.5rem + 3vmin) 0;
 
     h2 {
       padding-left: 3vw;
@@ -77,9 +87,13 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 // DESKTOP + IPAD PRO HORIZONTAL
 @media screen and (min-height: 568px) and (min-width: 1366px) {
+  .projectsContainer {
+    padding-top: calc(1.5rem + 10vmin);
+  }
+
   .headerContainer {
     width: 98.4vmin;
-    margin: calc(1.5rem + 10vmin) auto calc(1.5rem + 2vmin) auto;
+    margin: 0 auto calc(1.5rem + 2vmin) auto;
 
     h2 {
       font-size: calc(0.7rem + 2vmin);
