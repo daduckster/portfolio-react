@@ -29,6 +29,12 @@
   flex-direction: column;
   align-items: center;
 
+  .textColumn {
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.6rem + 0.1vmin);
+  }
+
   .text {
     font-size: calc(0.9rem + 0.5vmin);
   }
@@ -50,21 +56,23 @@
   .elementContainer {
     display: flex;
     flex-direction: column;
-    row-gap: calc(0.3rem + 0.3vmin);
+    row-gap: calc(0.7rem + 0.3vmin);
+    width: 80vmin;
 
     .element{
       display: flex;
       align-items: center;
+      column-gap: 0.7rem;
 
       .elementBox {
-        width: calc(0.8rem + 0.2vmin);
+        min-width: calc(0.8rem + 0.2vmin);
         height: calc(0.8rem + 0.2vmin);
         background-color: $blue;
-        margin-right: 0.4rem;
       }
 
       p {
         font-size: calc(0.9rem + 0.5vmin);
+        white-space: break-spaces;
       }
     }
   }
@@ -116,10 +124,14 @@
 
   .textContainer {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     width: calc(80rem + 3vmin);
     margin: auto;
+
+    .textColumn {
+      gap: calc(0.3rem + 0.2vmin);
+    }
 
     .text {
       width: calc(40rem + 1.5vmin);
@@ -142,7 +154,6 @@
 
     .elementContainer {
       .element {
-
         .elementBox {
           width: 1em;
           height: 1em;
