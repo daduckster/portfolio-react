@@ -23,9 +23,9 @@ function ProjectsCards() {
 
         <div className={styles.btnContainer}>
           <div className={styles.buttons}>
-            <a className={styles.demoBtn} target="_blank" rel="noopener noreferrer" href="https://dazzling-kirch-fa75a6.netlify.app/"><AiFillPlayCircle
+            <a className={styles.demoBtn} target="_blank" rel="noopener noreferrer" href="https://inquisitive-kashata-2bd212.netlify.app/"><AiFillPlayCircle
               className={styles.demoIcon}/> Demo</a>
-            <a className={styles.gitBtn} target="_blank" rel="noopener noreferrer" href="https://github.com/daduckster/do_note_forget"><AiFillGithub
+            <a className={styles.gitBtn} target="_blank" rel="noopener noreferrer" href="https://github.com/daduckster/note_app-react-typescript"><AiFillGithub
               className={styles.gitIcon}/> GitHub</a>
           </div>
         </div>
